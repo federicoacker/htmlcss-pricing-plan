@@ -8,6 +8,8 @@
 :root{
     --column-n: 3;
     --column-gap: 15px;
+    --row-n:3;
+    --row-gap:15px;
 }
 /*Header Actions */
 .header-actions{
@@ -57,7 +59,7 @@
     padding: 20px 0;
 }
 .plan{
-    flex-basis:calc((100%/var(--column-n))-(var(--column-gap) * (var(--column-n - 1)) / var(--column-n)));
+    flex-basis:calc((100% / var(--column-n)) - (var(--column-gap) * (var(--column-n) - 1) / var(--column-n)));
     min-width:256px;
     flex-grow:1;
     text-align:center;
@@ -65,4 +67,30 @@
 
 ul{
     list-style-type: none;
+}
+
+.plan-features-list-extra{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    column-gap:var(--column-gap);
+    --column-gap:20px;
+    --column-n:2;
+    flex-grow:1;
+}
+.plan-features-list-1,
+.plan-features-list-2{
+    flex-basis:calc((100% / var(--column-n)) - (var(--column-gap) * (var(--column-n) - 1) / var(--column-n)));
+    flex-grow:1;
+    min-width: 240px;
+}
+
+.plan-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:0 auto;
+    max-width:500px;
+    width:100%;
 }
