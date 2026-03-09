@@ -1,0 +1,57 @@
+/*FLEX*/
+
+.d-flex{
+    display:flex;
+}
+.flex-column{
+    flex-direction:column;
+}
+.flex-grow-1{
+    flex-grow:1;
+}
+.flex-grow-3{
+    flex-grow:3;
+}
+.flex-shrink-0{
+    flex-shrink:0;
+}
+.flex-align-center{
+    align-items:center;
+}
+.flex-justify-center{
+    justify-content:center;
+}
+.flex-justify-evenly{
+    justify-content:space-evenly;
+}
+.flex-column-gap-10{
+    column-gap:10px;
+}
+.flex-row-gap-10{
+    row-gap:10px;
+}
+.flex-row-gap-30{
+    row-gap:30px;
+}
+.h-0{
+    flex-basis:0px;
+}
+.overflow-auto{
+    overflow:auto;
+}
+
+/*BORDER*/
+.b-radius-10{
+    border-radius:10px 0 0 0;
+}
+
+/*BUTTONS*/
+
+.btn{
+    display:block;
+}
+
+/*TEXT*/
+.txt-align-center{
+    text-align:center;
+}
