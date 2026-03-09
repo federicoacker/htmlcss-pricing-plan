@@ -14,6 +14,7 @@ main{
     --column-gap: 30px;
     --row-n:3;
     --row-gap:15px;
+    --color-purple: #8400ff;
 }
 /*Header*/
 .header-container{
@@ -27,7 +28,6 @@ main{
 /* Toggle checkbox nell'header */
 .toggle{
     display:none;
-    
 }
 
 .toggle-label{
@@ -139,7 +139,7 @@ ul{
     text-align:center;
     border:none;
     border-radius:10px;
-    background:#6500FF;
+    background:var(--color-purple);
     color:white;
     width:calc(100% - 80px);
     font-size:18px;
@@ -152,10 +152,10 @@ ul{
 }
 
 .plan-actions-choose-button.inverted-button{
-    color:#6500FF;
+    color:var(--color-purple);
     background:white;
 }
 .plan.inverted-color{
-    background:#6500FF;
+    background:var(--color-purple);
     color:white;
 }
