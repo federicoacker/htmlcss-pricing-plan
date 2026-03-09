@@ -24,6 +24,9 @@
 .flex-justify-evenly{
     justify-content:space-evenly;
 }
+.flex-column-gap-5{
+    column-gap:5px;
+}
 .flex-column-gap-10{
     column-gap:10px;
 }
@@ -54,4 +57,11 @@
 /*TEXT*/
 .txt-align-center{
     text-align:center;
+}
+
+/*Container*/
+.container{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
 }

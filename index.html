@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTMLCSS PRICING PLAN</title>
+
+    <link rel="stylesheet" href="./styles/utility.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
+
 <body>
     <header class="header">
-        <div class="header-body"></div>
-        <div class="header-actions"></div>
+        <div class="header-body">
+            <h1 class="header-body-title">Our Pricing Plan</h1>
+            <p class="header-body-description">We are an industry-leading company that values
+                honesty, integrity and efficiency, building quality products.</p>
+        </div>
+        <div class="header-actions flex-column-gap-10">
+            <div class="header-actions-action-1 d-flex flex-align-center flex-column-gap-5">
+                <label for="toggle">Monthly</label>
+                <input type="checkbox" class="toggle" id="toggle">
+                <label for="toggle" class="toggle-label"></label>
+            </div>
+            <div class="header-actions-action-2 d-flex flex-align-center flex-column-gap-5">
+                <label for="toggle-2">Yearly</label>
+                <input type="checkbox" class="toggle" id="toggle-2">
+                <label for="toggle-2" class="toggle-label"></label>
+            </div>
+        </div>
     </header>
     <main>
-        <div class="plans">
+        <div class="plans d-flex container">
             <div class="plan">
                 <section class="plan-name">
                     <h2 class="plan-name-title"></h2>
@@ -36,4 +56,5 @@
         </div>
     </main>
 </body>
+
 </html>
