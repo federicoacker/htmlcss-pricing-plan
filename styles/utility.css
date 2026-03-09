@@ -18,11 +18,17 @@
 .flex-align-center{
     align-items:center;
 }
+.flex-justify-space-between{
+    justify-content:space-between;
+}
 .flex-justify-center{
     justify-content:center;
 }
 .flex-justify-evenly{
     justify-content:space-evenly;
+}
+.flex-justify-end{
+    justify-content:flex-end;
 }
 .flex-column-gap-5{
     column-gap:5px;
@@ -35,6 +41,9 @@
 }
 .flex-row-gap-30{
     row-gap:30px;
+}
+.flex-wrap{
+    flex-wrap:wrap;
 }
 .h-0{
     flex-basis:0px;
@@ -63,5 +72,6 @@
 .container{
     width:100%;
     max-width:1400px;
-    margin:0 auto;
+    margin:2vh auto;
+    padding: 0 2vh;
 }
