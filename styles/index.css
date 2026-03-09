@@ -4,7 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*Variabili*/
+:root{
+    --column-n: 3;
+    --column-gap: 15px;
+}
 /*Header Actions */
 .header-actions{
     display:flex;
@@ -45,4 +49,20 @@
 
 .toggle:checked + .toggle-label::before{
     translate: 10px 0;
+}
+
+/* Sezione Piani */
+.plans{
+    flex-wrap:wrap;
+    padding: 20px 0;
+}
+.plan{
+    flex-basis:calc((100%/var(--column-n))-(var(--column-gap) * (var(--column-n - 1)) / var(--column-n)));
+    min-width:256px;
+    flex-grow:1;
+    text-align:center;
+}
+
+ul{
+    list-style-type: none;
 }
