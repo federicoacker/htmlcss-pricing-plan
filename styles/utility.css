@@ -36,6 +36,9 @@
 .flex-column-gap-10{
     column-gap:10px;
 }
+.flex-column-gap-30{
+    column-gap:30px;
+}
 .flex-row-gap-10{
     row-gap:10px;
 }
@@ -74,4 +77,17 @@
     max-width:1400px;
     margin:2vh auto;
     padding: 0 2vh;
+}
+
+/* Checkmarks */
+.checkmark::before{
+    content:"\F633";
+    color:black;
+    font-family:bootstrap-icons!important;
+}
+
+.cross::before{
+    content:"\F62A";
+    color:black;
+    font-family:bootstrap-icons!important;
 }
