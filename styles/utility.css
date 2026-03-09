@@ -70,24 +70,34 @@
 .txt-align-center{
     text-align:center;
 }
+.txt-small-transparent{
+    font-size: 16px;
+    color: rgba(0,0,0,0.5);
+}
+.txt-small-white{
+    color:white;
+    font-size:16px;
+}
+.txt-big-bold{
+    font-weight:bolder;
+    font-size:48px;
+}
 
 /*Container*/
 .container{
     width:100%;
     max-width:1400px;
-    margin:2vh auto;
-    padding: 0 2vh;
+    margin: 0 auto;
+    padding: 2vh 2vh;
 }
 
 /* Checkmarks */
 .checkmark::before{
     content:"\F633";
-    color:black;
     font-family:bootstrap-icons!important;
 }
 
 .cross::before{
-    content:"\F62A";
-    color:black;
+    content:"\F659";
     font-family:bootstrap-icons!important;
 }
