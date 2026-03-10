@@ -45,6 +45,9 @@
 .flex-row-gap-30{
     row-gap:30px;
 }
+.flex-row-gap-50{
+    row-gap:50px;
+}
 .flex-wrap{
     flex-wrap:wrap;
 }
