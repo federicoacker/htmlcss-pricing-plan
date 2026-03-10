@@ -90,11 +90,11 @@ main {
     scale 0.3s ease,
     translate 0.3s ease;
 }
-/*.plan:hover {
+.plan:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
   scale: 110%;
   translate: 0 1%;
-}*/
+}
 
 ul {
   list-style-type: none;
