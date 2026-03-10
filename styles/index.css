@@ -4,7 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
 main {
   height: 90vh;
 }
@@ -16,6 +21,7 @@ main {
   --row-gap: 15px;
   --color-purple: #8400ff;
 }
+
 /*Header*/
 .header-container {
   min-height: 10vh;
@@ -138,7 +144,6 @@ ul {
 .plan-price {
   padding: 30px 0;
 }
-
 
 .plan-features {
   padding: 50px 0 50px 0;
