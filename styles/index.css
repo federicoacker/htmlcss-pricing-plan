@@ -53,7 +53,7 @@ main {
 .toggle-label::before {
   content: "";
   width: 15px;
-  height: 15px;
+  aspect-ratio:1;
   background: white;
   border-radius: 50%;
   position: absolute;
