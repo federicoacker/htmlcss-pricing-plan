@@ -5,157 +5,179 @@
   box-sizing: border-box;
 }
 
-main{
-    height:90vh;
+main {
+  height: 90vh;
 }
 /*Variabili*/
-:root{
-    --column-n: 3;
-    --column-gap: 30px;
-    --row-n:3;
-    --row-gap:15px;
-    --color-purple: #8400ff;
+:root {
+  --column-n: 3;
+  --column-gap: 30px;
+  --row-n: 3;
+  --row-gap: 15px;
+  --color-purple: #8400ff;
 }
 /*Header*/
-.header-container{
-    min-height:10vh;
+.header-container {
+  min-height: 10vh;
 }
 /*Header Actions */
-.header-actions{
-    display:flex;
-    align-items:center;
+.header-actions {
+  display: flex;
+  align-items: center;
 }
 /* Toggle checkbox nell'header */
-.toggle{
-    display:none;
+.toggle {
+  display: none;
 }
 
-.toggle-label{
-    width:25px;
-    height: 15px;
-    background: #929292;
-    border-radius: 75px;
-    position:relative;
-    display:flex;
-    align-items:center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.toggle-label {
+  width: 25px;
+  height: 15px;
+  background: #929292;
+  border-radius: 75px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.toggle-label::before{
-    content:"";
-    width:15px;
-    height:15px;
-    background:white;
-    border-radius:50%;
-    position:absolute;
-    left: 1px;
-    transition: translate 0.3s ease;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+.toggle-label::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 1px;
+  transition: translate 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
-.toggle:checked + .toggle-label{
-    background: black;
+.toggle:checked + .toggle-label {
+  background: black;
 }
 
-.toggle:checked + .toggle-label::before{
-    translate: 9px 0;
+.toggle:checked + .toggle-label::before {
+  translate: 9px 0;
 }
 
 /* Sezione Piani */
-.plans{
-    flex-wrap:wrap;
-    --column-gap:50px;
-    column-gap:var(--column-gap);
+.plans {
+  flex-wrap: wrap;
+  --column-gap: 50px;
+  column-gap: var(--column-gap);
 }
-.plan{
-    flex-basis:calc((100% / var(--column-n)) - (var(--column-gap) * (var(--column-n) - 1) / var(--column-n)));
-    min-width:256px;
-    flex-grow:1;
-    text-align:center;
-    min-height:25%;
-    background:white;
-    border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    transition: box-shadow 0.3s ease, scale 0.3s ease, translate 0.3s ease;
+.plan {
+  flex-basis: calc(
+    (100% / var(--column-n)) -
+      (var(--column-gap) * (var(--column-n) - 1) / var(--column-n))
+  );
+  min-width: 256px;
+  flex-grow: 1;
+  text-align: center;
+  min-height: 25%;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition:
+    box-shadow 0.3s ease,
+    scale 0.3s ease,
+    translate 0.3s ease;
 }
-.plan:hover{
-    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
-    scale:110%;
-    translate: 0 1%;
+/*.plan:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+  scale: 110%;
+  translate: 0 1%;
+}*/
+
+ul {
+  list-style-type: none;
 }
 
-ul{
-    list-style-type: none;
+.plan-features-list > li {
+  line-height: 1.5;
+  text-align: left;
+  padding: 0 50px 0 50px;
 }
 
-.plan-features-list > li{
-    line-height:1.5;
-    text-align:left;
-    padding: 0 50px 0 50px;
-}
-
-.plan-features-list-extra{
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-content:center;
-    column-gap:var(--column-gap);
-    --column-gap:20px;
-    --column-n:2;
-    flex-grow:1;
+.plan-features-list-extra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: var(--column-gap);
+  --column-gap: 20px;
+  --column-n: 2;
+  flex-grow: 1;
 }
 .plan-features-list-1,
-.plan-features-list-2{
-    flex-basis:calc((100% / var(--column-n)) - (var(--column-gap) * (var(--column-n) - 1) / var(--column-n)));
-    flex-grow:1;
-    min-width: 240px;
-    
+.plan-features-list-2 {
+  flex-basis: calc(
+    (100% / var(--column-n)) -
+      (var(--column-gap) * (var(--column-n) - 1) / var(--column-n))
+  );
+  flex-grow: 1;
+  min-width: 240px;
 }
 .plan-features-list-1 > li,
-.plan-features-list-2 > li{
-    text-align:left;
-    padding: 0 50px 0 50px;
+.plan-features-list-2 > li {
+  text-align: left;
+  padding: 0 50px 0 50px;
 }
 
-.plan-container{
-    display:flex;
-    flex-direction:column;
-    margin:0 auto;
-    width:100%;
+.plan-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.plan-name{
-    padding: 20px 0 0 20px;
-    text-align:left;
-    font-size:large;
+.plan-name {
+  padding: 20px 0 0 20px;
+  text-align: left;
+  font-size: large;
 }
-.plan-price{
-    padding: 30px 0;
-}
-
-.plan-actions button{
-    outline:none;
-    padding:20px 30px;
-    text-align:center;
-    border:none;
-    border-radius:10px;
-    background:var(--color-purple);
-    color:white;
-    width:calc(100% - 80px);
-    font-size:18px;
+.plan-price {
+  padding: 30px 0;
 }
 
-.plan-features{
-    padding: 50px 0 50px 0;
-    font-size: 20px;
-    line-height:1.5;
+
+.plan-features {
+  padding: 50px 0 50px 0;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
-.plan-actions-choose-button.inverted-button{
-    color:var(--color-purple);
-    background:white;
+.plan-actions button {
+  outline: none;
+  padding: 20px 30px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background: var(--color-purple);
+  color: white;
+  width: calc(100% - 80px);
+  font-size: 18px;
+  border: 1px solid var(--color-purple);
 }
-.plan.inverted-color{
-    background:var(--color-purple);
-    color:white;
+
+.plan-actions-choose-button.inverted-button {
+  color: var(--color-purple);
+  background: white;
+  border: 1px solid white;
+}
+.plan.inverted-color {
+  background: var(--color-purple);
+  color: white;
+}
+
+.plan-actions-choose-button:hover {
+  background: white;
+  color: var(--color-purple);
+  border: 1px solid var(--color-purple);
+}
+.plan-actions-choose-button.inverted-button:hover {
+  background: var(--color-purple);
+  color: white;
+  border: 1px solid white;
 }
