@@ -78,7 +78,7 @@ main {
     (100% / var(--column-n)) -
       (var(--column-gap) * (var(--column-n) - 1) / var(--column-n))
   );
-  min-width: 256px;
+  min-width: 350px;
   flex-grow: 1;
   text-align: center;
   min-height: 25%;
